@@ -15,10 +15,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var commentField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureCommentField()
+        configureSubmitButton()
 
         // Do any additional setup after loading the view.
     }
@@ -76,6 +79,37 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         dismiss(animated: true, completion: nil)
         
+    }
+    
+    func configureCommentField() {
+
+        commentField.layer.cornerRadius = 6
+        commentField.layer.borderWidth = 1
+        commentField.layer.borderColor = UIColor.purple.cgColor
+
+        
+        /*
+        let gradient = CAGradientLayer()
+            gradient.frame =  CGRect(origin: CGPoint.zero, size: self.commentField.frame.size)
+            gradient.colors = [UIColor.blue.cgColor, UIColor.green.cgColor]
+
+            let shape = CAShapeLayer()
+            shape.lineWidth = 2
+        shape.cornerRadius = 8
+            shape.path = UIBezierPath(rect: self.commentField.bounds).cgPath
+            shape.strokeColor = UIColor.black.cgColor
+            shape.fillColor = UIColor.clear.cgColor
+            gradient.mask = shape
+        self.commentField.clipsToBounds = true
+
+            self.commentField.layer.addSublayer(gradient)
+
+    */
+        
+        }
+    
+    func configureSubmitButton() {
+        submitButton.layer.cornerRadius = 6
     }
     
     /*

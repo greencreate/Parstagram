@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGg-zA-QWN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -229,22 +229,22 @@
                                     <outletCollection property="gestureRecognizers" destination="CRz-S9-fBQ" appends="YES" id="GGS-jb-X0I"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Cj-Ls-SU1">
-                                <rect key="frame" x="10" y="518" width="394" height="64"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type something" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Cj-Ls-SU1">
+                                <rect key="frame" x="10" y="518" width="394" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="yKj-0c-Npr"/>
+                                    <constraint firstAttribute="height" constant="48" id="sdo-0v-FNS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7p-rb-GW2">
-                                <rect key="frame" x="10" y="598" width="394" height="48"/>
+                                <rect key="frame" x="10" y="582" width="394" height="48"/>
                                 <color key="backgroundColor" red="0.470320344" green="0.3513405919" blue="0.92333495619999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="bLm-Wu-oOC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Submit">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Submit" backgroundImage="bg 2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -256,8 +256,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="C7p-rb-GW2" firstAttribute="top" secondItem="2Cj-Ls-SU1" secondAttribute="bottom" constant="16" id="HRd-pm-LiQ"/>
-                            <constraint firstItem="2Cj-Ls-SU1" firstAttribute="leading" secondItem="XIq-X8-sNj" secondAttribute="leading" constant="10" id="M6M-CM-zM8"/>
-                            <constraint firstItem="XIq-X8-sNj" firstAttribute="trailing" secondItem="2Cj-Ls-SU1" secondAttribute="trailing" constant="10" id="WZ3-Ng-sxT"/>
+                            <constraint firstItem="XIq-X8-sNj" firstAttribute="trailing" secondItem="2Cj-Ls-SU1" secondAttribute="trailing" constant="10" id="Oxv-CU-2ne"/>
+                            <constraint firstItem="2Cj-Ls-SU1" firstAttribute="leading" secondItem="XIq-X8-sNj" secondAttribute="leading" constant="10" id="UVU-jZ-cUe"/>
                             <constraint firstItem="C7p-rb-GW2" firstAttribute="leading" secondItem="XIq-X8-sNj" secondAttribute="leading" constant="10" id="ZcT-AC-TEM"/>
                             <constraint firstItem="2Cj-Ls-SU1" firstAttribute="top" secondItem="sQ1-LQ-maK" secondAttribute="bottom" constant="16" id="hRk-oX-Yrw"/>
                             <constraint firstItem="XIq-X8-sNj" firstAttribute="trailing" secondItem="sQ1-LQ-maK" secondAttribute="trailing" constant="10" id="tGD-Sy-yaf"/>
@@ -269,6 +269,7 @@
                     <connections>
                         <outlet property="commentField" destination="2Cj-Ls-SU1" id="fWG-93-qKb"/>
                         <outlet property="imageView" destination="sQ1-LQ-maK" id="PWH-kp-PO7"/>
+                        <outlet property="submitButton" destination="C7p-rb-GW2" id="vMp-4X-aor"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCA-El-wZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,6 +302,7 @@
     </scenes>
     <resources>
         <image name="bg" width="288" height="512"/>
+        <image name="bg 2" width="512" height="288"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
