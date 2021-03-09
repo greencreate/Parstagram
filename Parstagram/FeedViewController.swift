@@ -14,6 +14,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var posts = [PFObject]()
     var refreshControl: UIRefreshControl!
+    var numPosts = 5
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -25,8 +26,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
-        
-        // Do any additional setup after loading the view.
     }
     
     
@@ -36,7 +35,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
-        query.limit = 20
+        query.limit = numPosts
         
         query.findObjectsInBackground {(posts, error) in
             if posts != nil {
@@ -46,13 +45,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    
     @objc func onRefresh() {
         run(after: 1) {
             self.refreshControl.endRefreshing()
         }
     }
     
-    // Implement the delay method
+    
     func run(after wait: TimeInterval, closure: @escaping () -> Void) {
         let queue = DispatchQueue.main
         queue.asyncAfter(deadline: DispatchTime.now() + wait, execute: closure)
@@ -82,6 +82,28 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    
+    func loadMorePosts() {
+        
+
+        let query = PFQuery(className: "Posts")
+        query.includeKey("author")
+        query.limit = numPosts + 5
+        
+        query.findObjectsInBackground {(posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    //load more tweets when user scrolls to bottom of feed
+     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row + 1 == numPosts {
+            loadMorePosts()
+        }
+    }
     
 
     

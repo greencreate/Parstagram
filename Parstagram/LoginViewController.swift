@@ -13,10 +13,13 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet var cardsCollection: [UIButton]!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureCardsCollection()
+        configureTextFields()
 
         // Do any additional setup after loading the view.
     }
@@ -57,10 +60,26 @@ class LoginViewController: UIViewController {
         
     }
     
+    func configureTextFields() {
+        usernameField.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        usernameField.alpha = 0.7
+        
+        passwordField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        passwordField.alpha = 0.7
 
+
+    }
     
- 
     
+    func configureCardsCollection() {
+        for card in cardsCollection {
+            //add rounded corners to cards
+            card.layer.cornerRadius = 12
+            card.layer.borderWidth = 1
+            card.layer.borderColor = UIColor.white.cgColor
+            card.alpha = 0.8
+        }
+    }
     
     /*
     // MARK: - Navigation
@@ -73,3 +92,5 @@ class LoginViewController: UIViewController {
     */
 
 }
+
+
