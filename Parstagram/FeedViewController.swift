@@ -29,13 +29,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    //after user posts, refresh tableview to dispay newly created post
     override func viewDidAppear(_ animated: Bool) {
+        //after user posts, refresh tableview to dispay newly created post
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
-        query.limit = numPosts
+        query.limit = numPosts  //get last x number of posts
         
         query.findObjectsInBackground {(posts, error) in
             if posts != nil {
@@ -61,6 +61,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
+        //return numPosts
     }
     
     
@@ -85,10 +86,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func loadMorePosts() {
         
-
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
-        query.limit = numPosts + 5
+        numPosts = numPosts + 5
+        query.limit = numPosts
         
         query.findObjectsInBackground {(posts, error) in
             if posts != nil {
@@ -97,6 +98,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
+
     
     //load more tweets when user scrolls to bottom of feed
      func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -104,6 +106,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             loadMorePosts()
         }
     }
+ 
+     
     
 
     
