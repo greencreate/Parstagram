@@ -29,9 +29,9 @@ Here's a walkthrough of implemented user stories:
 
 <table>
   <tr>
-    <td><img src='http://g.recordit.co/uLgRMHOzML.gif' title='Video Walkthrough' width='280' alt='Video Walkthrough' /></td>
-    <td><img src='http://g.recordit.co/7cWxp4uS7O.gif' title='Video Walkthrough' width='280' alt='Video Walkthrough' /></td>
-    <td><img src='https://media.giphy.com/media/lhZYz3PFFHlW8ml0uw/giphy.gif' title='Video Walkthrough' width='280' alt='Video Walkthrough' /></td>
+    <td><img src='http://g.recordit.co/uLgRMHOzML.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
+    <td><img src='http://g.recordit.co/7cWxp4uS7O.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
+    <td><img src='http://g.recordit.co/4g2wTiscAi.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
   </tr>
   <tr>
     <td>- User sees app icon in home screen and styled launch screen<br>- User can log in</br>- User can pull to refresh<br>- User can load past posts infinitely</td>
