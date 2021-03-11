@@ -25,10 +25,16 @@ Here's a walkthrough of implemented user stories:
 
 
 
-<img src='https://media.giphy.com/media/uNmGcH0ZoPfPVKN2vs/giphy.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' />
 
 
-<img src='http://g.recordit.co/HR6TlYNpfU.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' />
+<table>
+  <tr>
+    <td><img src='https://recordit.co/7cWxp4uS7O' title='Video Walkthrough' width='350' alt='Video Walkthrough' /></td>
+    <td>- User can take a photo, add a caption, and post it to the server</td>
+  </tr>
+  <tr>
+    <td><img src='https://media.giphy.com/media/lhZYz3PFFHlW8ml0uw/giphy.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' /></td>
+    <td>- User can sign up to create a new account</td>
+  </tr>
 
-User can sign up to create a new account:
-<img src='https://media.giphy.com/media/lhZYz3PFFHlW8ml0uw/giphy.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' />
+
