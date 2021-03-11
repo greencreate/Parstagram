@@ -23,6 +23,11 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+
+
+<img src='https://media.giphy.com/media/uNmGcH0ZoPfPVKN2vs/giphy.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' />
+
+
 <img src='http://g.recordit.co/HR6TlYNpfU.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' />
 
 User can sign up to create a new account:
