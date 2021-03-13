@@ -36,7 +36,7 @@ Here's a walkthrough of implemented user stories:
   <tr>
     <td>- User can log in</br>- User can pull to refresh<br>- User can load past posts infinitely</td>
     <td>- User can take a photo, add a caption, and post it to the server</td>
-    <td>-User sees app icon in home screen and styled launch screen<br>- User can sign up to create a new account</td>
+    <td>- User sees app icon in home screen and styled launch screen<br>- User can sign up to create a new account</td>
   </tr>
 
 
