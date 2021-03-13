@@ -168,10 +168,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="p8u-PF-hiT" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="508" width="414" height="59"/>
+                                        <rect key="frame" x="0.0" y="508" width="414" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p8u-PF-hiT" id="hsO-RU-xgb">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDM-5o-AJz">
@@ -180,8 +180,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Here is a comment!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5D5-Yf-dJ6">
-                                                    <rect key="frame" x="62.5" y="8" width="148" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="This is a comment!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaI-xQ-UWu">
+                                                    <rect key="frame" x="62.5" y="8" width="343.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -189,16 +189,16 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iDM-5o-AJz" secondAttribute="bottom" constant="8" id="Ant-Tb-7Ux"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="5D5-Yf-dJ6" secondAttribute="bottom" constant="8" id="CBd-b1-wOF"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OaI-xQ-UWu" secondAttribute="bottom" constant="8" id="GEf-Eq-pWS"/>
                                                 <constraint firstItem="iDM-5o-AJz" firstAttribute="top" secondItem="hsO-RU-xgb" secondAttribute="top" constant="8" id="ZNA-Gj-1us"/>
+                                                <constraint firstItem="OaI-xQ-UWu" firstAttribute="top" secondItem="hsO-RU-xgb" secondAttribute="top" constant="8" id="aBZ-3S-SIY"/>
                                                 <constraint firstItem="iDM-5o-AJz" firstAttribute="leading" secondItem="hsO-RU-xgb" secondAttribute="leading" constant="8" id="bBp-nJ-axg"/>
-                                                <constraint firstItem="5D5-Yf-dJ6" firstAttribute="leading" secondItem="iDM-5o-AJz" secondAttribute="trailing" constant="8" id="hmg-nf-SmD"/>
-                                                <constraint firstItem="5D5-Yf-dJ6" firstAttribute="top" secondItem="hsO-RU-xgb" secondAttribute="topMargin" constant="8" id="lND-HR-WPZ"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5D5-Yf-dJ6" secondAttribute="trailing" constant="8" id="uQR-Uq-nCh"/>
+                                                <constraint firstItem="OaI-xQ-UWu" firstAttribute="leading" secondItem="iDM-5o-AJz" secondAttribute="trailing" constant="8" id="mgw-rB-vZM"/>
+                                                <constraint firstAttribute="trailing" secondItem="OaI-xQ-UWu" secondAttribute="trailing" constant="8" id="tWd-h5-Ucb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="commentLabel" destination="5D5-Yf-dJ6" id="h8d-tL-ZgB"/>
+                                            <outlet property="commentLabel" destination="OaI-xQ-UWu" id="wnJ-IE-11M"/>
                                             <outlet property="nameLabel" destination="iDM-5o-AJz" id="6cD-9t-zmG"/>
                                         </connections>
                                     </tableViewCell>
