@@ -34,9 +34,9 @@ Here's a walkthrough of implemented user stories:
     <td><img src='http://g.recordit.co/xeBmvVnEDx.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
   </tr>
   <tr>
-    <td>- User sees app icon in home screen and styled launch screen<br>- User can log in</br>- User can pull to refresh<br>- User can load past posts infinitely</td>
-    <td>- User can take a photo, add a caption, and post it to the server</td>
-    <td>-User sees app icon in home screen and styled launch screen<br>- User can sign up to create a new account</td>
+    <td width='300'>- User can log in</br>- User can pull to refresh<br>- User can load past posts infinitely</td>
+    <td width='300'>- User can take a photo, add a caption, and post it to the server</td>
+    <td width='300'>- User sees app icon in home screen and styled launch screen<br>- User can sign up to create a new account</td>
   </tr>
 
 
