@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,6 +196,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cst-fv-Q6V">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="wCy-7T-vbJ">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="NlO-Rr-CgM" id="obc-T1-XIK"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="Jjh-9g-T4B">
                             <connections>
                                 <segue destination="UGg-zA-QWN" kind="presentation" id="H5p-wj-pLy"/>
@@ -284,7 +289,7 @@
         <!--Navigation Controller-->
         <scene sceneID="DiK-jM-7oM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="H5V-YV-yc5" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="H5V-YV-yc5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mhP-r0-M8O">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
