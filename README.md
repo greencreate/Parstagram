@@ -23,15 +23,16 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 
-
 <table>
   <tr>
     <td><img src='http://g.recordit.co/sPl01ua3QK.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
     <td><img src='http://g.recordit.co/jiXxffMuWg.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
+    <td><img src='http://g.recordit.co/pdIdtQbBRD.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
   </tr>
   <tr>
     <td width='300'>Required user stories</td>
     <td width='300'>Profile pictures are shown for posts and comments</td>
+    <td width='300'>User can add a profile picture</td>
   </tr>
 </table>
 
