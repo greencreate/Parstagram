@@ -15,14 +15,26 @@ The following **required** functionality is completed:
 
 The following **bonus** features are implemented:
 
-- [ ] User can add a profile picture. (2pts)
-- [ ] Profile pictures are shown for posts and comments. (2pts)
+- [X] User can add a profile picture. (2pts)
+- [X] Profile pictures are shown for posts and comments. (2pts)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/sPl01ua3QK.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+
+
+<table>
+  <tr>
+    <td><img src='http://g.recordit.co/sPl01ua3QK.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
+    <td><img src='http://g.recordit.co/jiXxffMuWg.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /></td>
+  </tr>
+  <tr>
+    <td width='300'>Required user stories</td>
+    <td width='300'>Profile pictures are shown for posts and comments</td>
+  </tr>
+</table>
+
 
 # Parstagram - Part I
 
@@ -64,5 +76,5 @@ Here's a walkthrough of implemented user stories:
     <td width='300'>- User can take a photo, add a caption, and post it to the server</td>
     <td width='300'>- User sees app icon in home screen and styled launch screen<br>- User can sign up to create a new account</td>
   </tr>
-
+</table>
 
